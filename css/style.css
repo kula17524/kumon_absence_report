@@ -116,6 +116,7 @@ ul li a:before {
 /* ナビゲーション分の余白 */
 #content {
     padding-top:70px;
+    margin: 0 1%;
 }
 @media screen and (max-width: 500px) {
     #content {
