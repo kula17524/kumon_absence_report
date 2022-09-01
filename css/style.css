@@ -122,3 +122,6 @@ ul li a:before {
         padding-top: 90px;
     }
 }
+.set-center {
+    text-align: center;
+}
