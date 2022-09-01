@@ -122,7 +122,9 @@ ul li a:before {
         padding-top: 90px;
     }
 }
-.calendar {
+.set-center {
     text-align: center;
-    margin: 0 10px;
+}
+.set-margin {
+    margin: 0 5%;
 }
