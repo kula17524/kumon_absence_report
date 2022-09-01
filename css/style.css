@@ -99,16 +99,26 @@ ul li a:before {
         text-align: center;
         margin: 0 auto;
         width: 100%;
+        height: 50px;
         z-index: 1000;
+        padding: 0;
     }
     #gnav{
         text-align: center;
-        margin: 0 auto;
+        margin: -10px auto 0 auto;
         width: 100%;
         z-index: 1000;
+    }
+    ul {
+        margin-top: 0;
     }
 }
 /* ナビゲーション分の余白 */
 #content {
-    padding-top:80px;
+    padding-top:70px;
+}
+@media screen and (max-width: 500px) {
+    #content {
+        padding-top: 90px;
+    }
 }
