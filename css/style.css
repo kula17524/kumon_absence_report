@@ -72,7 +72,7 @@ ul li:nth-child(2) {
 }
 ul li * {
     display:inline-block;
-    font-size:1em;
+    font-size:1.2em;
     line-height:50px;
 }
 ul li a {
@@ -90,7 +90,7 @@ ul li a:before {
     display:block;
     color:#ffffff;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     .site-header {
         display: block;
     }
