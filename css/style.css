@@ -7,30 +7,29 @@
 .site-header {
     background: #7dcdf4;
     display: flex;
-    padding: 0px 0px;
+    justify-content: space-between;
+    padding: 0;
     margin: 0;
     position: fixed;
-    justify-content: space-between;
     width: 100%;
-    gap:0;
 }
 .site-logo{
     position: relative;
-	display: block;
 	overflow: hidden;
 	cursor: pointer;
-    margin: 10px;
+    margin-top: 5px;
     height: 60px;
-    width: 170px;
-  }
+    width: 200px;
+}
 .site-logo img {
     position: absolute;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	height: 100%;
-    display: block;
+	width: 200px;
+    height:60px;
+    display: inline-block;
 	-webkit-transition: .4s ease-in-out;
 	transition: .4s ease-in-out;
 }
@@ -45,10 +44,10 @@
     opacity: 0;
 }
 #gnav {
-    margin: 15px 10px 0 0;
+    margin:0;
 }
 ul {
-    margin-top:5px;
+    margin-top:10px;
     padding:0;
     display:inline-block;
     text-align:center;
@@ -73,7 +72,7 @@ ul li:nth-child(2) {
 }
 ul li * {
     display:inline-block;
-    font-size:1.2em;
+    font-size:1em;
     line-height:50px;
 }
 ul li a {
@@ -90,6 +89,24 @@ ul li a:before {
     content:attr(data-text);
     display:block;
     color:#ffffff;
+}
+@media screen and (max-width: 450px) {
+    .site-header {
+        display: block;
+    }
+    .site-logo {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        z-index: 1000;
+    }
+    #gnav{
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        z-index: 1000;
+    }
 }
 /* ナビゲーション分の余白 */
 #content {
