@@ -158,20 +158,28 @@ ul li a:before {
     height: 100%;
     background: rgba(0,0,0, 0.4);
 }
-.yomi {
-    font-weight: normal;
-    font-size: 1.5em;
-    color: #ffffff;
-    position: absolute;
-    top: 420px;
-    left: 2%;
-}
 h1 {
     font-weight: normal;
     font-size: 3em;
     color: #ffffff;
     position: absolute;
-    top: 445px;
+    top: 360px;
+    left: 1%;
+}
+.yomi {
+    font-weight: normal;
+    font-size: 1.3em;
+    color: #ffffff;
+    position: absolute;
+    top: 340px;
+    left: 2%;
+}
+.address {
+    font-weight: normal;
+    font-size: 1.3em;
+    color: #ffffff;
+    position: absolute;
+    top: 430px;
     left: 1%;
 }
 @media screen and (max-width: 530px) {
@@ -179,7 +187,7 @@ h1 {
         font-size: 2.5em;
         color: #ffffff;
         position: absolute;
-        top: 455px;
+        top: 400px;
         left: 1%;
     }
     .yomi {
@@ -187,8 +195,16 @@ h1 {
         font-size: 1em;
         color: #ffffff;
         position: absolute;
-        top: 420px;
-        left: 3%;
+        top: 390px;
+        left: 5%;
+    }
+    .address {
+        font-weight: normal;
+        font-size: 1em;
+        color: #ffffff;
+        position: absolute;
+        top: 450px;
+        left: 1%;
     }
 }
 h2 {
@@ -202,7 +218,7 @@ h2 {
     text-align: center;
 }
 .set-margin {
-    margin: 0 7%;
+    margin: 0 5%;
 }
 p {
     display: inline-block;
