@@ -119,7 +119,6 @@ ul li a:before {
 /* ナビゲーション分の余白 */
 #content {
     padding-top:60px;
-    background-color: #ececec;
 }
 @media screen and (max-width: 530px) {
     #content {
@@ -240,9 +239,16 @@ p {
 }
 
 /* 欠席連絡フォーム */
+#absence {
+    color:#ffffff;
+    font-weight: normal;
+    margin-bottom: 0;
+}
 #back {
-    background-color: #dbdbdb;
-    background-position:200% 200%;
+    background-color: #000000;
+}
+.ab-font {
+    color:#ffffff
 }
 /* ジャンプ時の位置調整 */
 .anchor {
