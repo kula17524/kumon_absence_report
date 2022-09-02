@@ -212,3 +212,17 @@ p {
         display: none; 
     }
 }
+/* ジャンプ時の位置調整 */
+.anchor {
+    display: block;
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+@media screen and (max-width: 530px) {
+    .anchor {
+        display: block;
+        padding-top: 80px;
+        margin-top: -80px;
+    }
+}
