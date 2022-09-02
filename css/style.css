@@ -86,6 +86,7 @@ ul li a:hover {
 }
 ul li a:focus { 
     margin-top:0;
+    outline: 0;
 }
 ul li a:before {
     content:attr(data-text);
@@ -246,9 +247,11 @@ p {
 }
 #back {
     background-color: #000000;
+    text-align: center;
 }
 .ab-font {
-    color:#ffffff
+    color:#ffffff;
+    padding-top:100px;
 }
 /* ジャンプ時の位置調整 */
 .anchor {
