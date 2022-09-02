@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     font-family: 'M PLUS Rounded 1c', 'Noto Sans JP', sans-serif;
+    color:#393939;
 }
 /* ナビゲーションバー*/
 .site-header {
@@ -118,6 +119,7 @@ ul li a:before {
 /* ナビゲーション分の余白 */
 #content {
     padding-top:60px;
+    background-color: #ececec;
 }
 @media screen and (max-width: 530px) {
     #content {
@@ -128,10 +130,15 @@ ul li a:before {
 #top {
     position: relative;
 }
+.size-fit {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
 .img-container {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 100%;
 }
 .img-container::after {
     content: '';
@@ -139,14 +146,14 @@ ul li a:before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 500px;
+    height: 100%;
     background-image: linear-gradient(180deg, transparent 0 30%, #000 100% 150%);
 }
 .top-img {
     object-fit: cover;
     object-position: 80% 50%;
     width: 100%;
-    height: 500px;
+    height: 100%;
 }
 .top-img::before{
     content: "";
@@ -158,57 +165,60 @@ ul li a:before {
     height: 100%;
     background: rgba(0,0,0, 0.4);
 }
+.top-sentence {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 70%;
+    left: 2%;
+}
 h1 {
     font-weight: normal;
     font-size: 3em;
     color: #ffffff;
-    position: absolute;
-    top: 360px;
-    left: 1%;
 }
 .yomi {
     font-weight: normal;
     font-size: 1.3em;
     color: #ffffff;
-    position: absolute;
-    top: 340px;
-    left: 2%;
 }
 .address {
     font-weight: normal;
     font-size: 1.3em;
     color: #ffffff;
-    position: absolute;
-    top: 430px;
-    left: 1%;
 }
 @media screen and (max-width: 530px) {
+    .top-sentence {
+        top: 75%;
+        left: 2%;
+    }
     h1 {
         font-size: 2.5em;
-        color: #ffffff;
-        position: absolute;
-        top: 400px;
-        left: 1%;
     }
     .yomi {
-        font-weight: normal;
         font-size: 1em;
-        color: #ffffff;
-        position: absolute;
-        top: 390px;
-        left: 5%;
     }
     .address {
-        font-weight: normal;
         font-size: 1em;
-        color: #ffffff;
-        position: absolute;
-        top: 450px;
-        left: 1%;
+    }
+}
+@media screen and (max-height: 545px) {
+    .address {
+        display: none;
+    }
+}
+@media screen and (max-height: 300px) {
+    .yomi {
+        display: none;
+    }
+}
+@media screen and (max-height: 300px) {
+    .top-sentence {
+        top:50%;
     }
 }
 h2 {
-    margin: 1%;
+    text-align: center;
 }
 /*h1, h2 {
     font-family: ;
@@ -228,6 +238,12 @@ p {
         display: none; 
     }
 }
+
+/* 欠席連絡フォーム */
+#back {
+    background-color: #dbdbdb;
+    background-position:200% 200%;
+}
 /* ジャンプ時の位置調整 */
 .anchor {
     display: block;
@@ -241,4 +257,8 @@ p {
         padding-top: 80px;
         margin-top: -80px;
     }
+}
+/* セクション区切り */
+.section {
+    margin-top: 100px;
 }
