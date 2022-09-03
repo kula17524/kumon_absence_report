@@ -11,8 +11,15 @@
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans+JP&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+Rounded+1c&family=Noto+Sans+JP&display=swap" rel="stylesheet">
         <title>公文松原出岡教室 欠席連絡Webサイト</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
-    <body oncontextmenu="return false;">
+    <body>
+        <!--oncontextmenu="return false;"-->
+        <!-- ローディング画面 -->
+        <div class="loading">
+            <div class="animation"></div>
+        </div>
+
         <!--ナビゲーションバー-->
         <header class="site-header">
             <div class="site-logo">
@@ -49,13 +56,13 @@
             <div class="section"></div>
 
             <!-- カレンダー -->
-            <div id="calendar" class="anchor">
-                <h2>カレンダー</h2>
+            <div id="calendar" class="anchor ab-font">
+                <h2 class="bottom-bargin">カレンダー</h2>
                 <div class="set-center">
                     <div class="set-margin">
                         <script async id='calinc-mem166369-height400' type="text/javascript" src="//freecalend.com/jstac/calinc.js"></script>
                     </div>
-                    <p>時間　 水曜日：14:30～20:00<br class="br-1"><p class="br-1"> 　　</p><p>　土曜日：13:30～20:00</p>
+                    <p>時間　 水曜日：14:30～20:00<br class="br-1"><p class="br-1"> 　　</p><p class="bottom-margin">　土曜日：13:30～20:00</p>
                 </div>
             </div>
 
@@ -70,5 +77,7 @@
             </div>
         </main>
         <script src="js/button.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/loading.js"></script>
     </body>
 </html>
