@@ -167,7 +167,7 @@ ul li a:before {
 }
 .top-sentence {
     position: absolute;
-    height: 100%;
+    height: 50px;
     width: 100%;
     top: 70%;
     left: 2%;
